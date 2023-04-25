@@ -8,15 +8,81 @@
     tools:context=".telaMapas" >
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/IDmunicipios"
         android:layout_width="130dp"
         android:layout_height="36dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="Capital"
         android:textAlignment="viewStart"
         android:textSize="25sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/IDidh"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Capital"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/IDarea"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Capital"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <TextView
+        android:id="@+id/IDpopulacao"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Capital"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <TextView
+        android:id="@+id/IDcapital"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Capital"
+        android:textAlignment="viewStart"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.286" />
@@ -25,6 +91,7 @@
         android:id="@+id/textView12"
         android:layout_width="130dp"
         android:layout_height="36dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="Municípios"
         android:textAlignment="viewStart"
         android:textSize="25sp"
@@ -39,6 +106,7 @@
         android:id="@+id/textView11"
         android:layout_width="130dp"
         android:layout_height="36dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="IDH"
         android:textAlignment="viewStart"
         android:textSize="25sp"
@@ -53,6 +121,7 @@
         android:id="@+id/textView9"
         android:layout_width="130dp"
         android:layout_height="36dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="População"
         android:textAlignment="viewStart"
         android:textSize="25sp"
@@ -67,6 +136,7 @@
         android:id="@+id/textView13"
         android:layout_width="130dp"
         android:layout_height="36dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="Área"
         android:textAlignment="viewStart"
         android:textSize="25sp"
@@ -81,6 +151,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="casual"
         android:text="ESTADO"
         android:textSize="30sp"
         android:textStyle="bold|italic"
@@ -89,10 +160,10 @@
         app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137" />
+        app:layout_constraintVertical_bias="0.134" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/IDmapa"
         android:layout_width="264dp"
         android:layout_height="209dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -104,7 +175,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/IDbandeira"
         android:layout_width="104dp"
         android:layout_height="98dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -119,6 +190,7 @@
         android:id="@+id/textView8"
         android:layout_width="130dp"
         android:layout_height="36dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="Capital"
         android:textAlignment="viewStart"
         android:textSize="25sp"
@@ -130,14 +202,13 @@
         app:layout_constraintVertical_bias="0.286" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/IDbuttonvoltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="telaprincipal"
         android:text="voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.937" />
