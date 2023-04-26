@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         IDnomeestado = findViewById(R.id.IDnomeestado);
 
     }
-    public void telaMapas(View view){
+    public void telamapas(View view){
 
-        Intent it_telaMapas = new Intent(this, telaMapas.class);
+        Intent it_telaMapas = new Intent(this, telamapas.class);
 
         startActivity(it_telaMapas);
 
