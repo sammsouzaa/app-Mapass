@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ADDBE1"
-    tools:context=".telaMapas" >
+    tools:context=".telamapas" >
 
     <TextView
         android:id="@+id/IDmunicipios"
