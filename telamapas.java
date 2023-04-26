@@ -3,20 +3,17 @@ package com.example.appmapas;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class telamapas extends AppCompatActivity {
 
     public TextView IDcapital;
-    public TextView IDname;
-
+    public TextView IDestadinho;
     public TextView IDpopulacao;
     public TextView IDarea;
     public TextView IDidh;
@@ -37,25 +34,67 @@ public class telamapas extends AppCompatActivity {
         IDidh = findViewById(R.id.IDidh);
         IDmunicipios = findViewById(R.id.IDmunicipios);
 
+        IDestadinho = findViewById(R.id.IDestadinho);
 
         IDbandeira = findViewById(R.id.IDbandeira);
         IDmapa = findViewById(R.id.IDmapa);
 
-        Intent it = getIntent();
-        String nome = it.getStringExtra("nomeestado");
-        String sigla = it.getStringExtra("siglaestado");
+        Intent aba = getIntent();
+        String estado = aba.getStringExtra("nome");
 
-        IDname.setText(nome);
 
-        if (sigla.equals("pr")){
+        if (estado.equals("pr")|| estado.equals("PR")){
+
+            IDestadinho.setText("paraná");
             IDbandeira.setImageResource(R.drawable.pr);
+
+            IDcapital.setText("Curitiba");
+            IDpopulacao.setText("11,8 Milhões");
+            IDarea.setText("199.315km2");
+            IDidh.setText("");
+            IDmunicipios.setText("");
+
+            IDcapital.setVisibility(View.VISIBLE);
+            IDpopulacao.setVisibility(View.VISIBLE);
+            IDarea.setVisibility(View.VISIBLE);
+            IDidh.setVisibility(View.VISIBLE);
+            IDmunicipios.setVisibility(View.VISIBLE);
         }
-        else if (sigla.equals("sc")){
+        else if (estado.equals("sc")|| estado.equals("SC")){
+
+            IDestadinho.setText("santa catarina");
             IDbandeira.setImageResource(R.drawable.sc);
+
+            IDcapital.setText("");
+            IDpopulacao.setText("");
+            IDarea.setText("");
+            IDidh.setText("");
+            IDmunicipios.setText("");
+
+            IDcapital.setVisibility(View.VISIBLE);
+            IDpopulacao.setVisibility(View.VISIBLE);
+            IDarea.setVisibility(View.VISIBLE);
+            IDidh.setVisibility(View.VISIBLE);
+            IDmunicipios.setVisibility(View.VISIBLE);
         }
-        else if (sigla.equals("rs")){
+        else if (estado.equals("rs")|| estado.equals("RS")){
+
+            IDestadinho.setText("rio grande do sul");
             IDbandeira.setImageResource(R.drawable.rs);
+
+            IDcapital.setText("");
+            IDpopulacao.setText("");
+            IDarea.setText("");
+            IDidh.setText("");
+            IDmunicipios.setText("");
+
+            IDcapital.setVisibility(View.VISIBLE);
+            IDpopulacao.setVisibility(View.VISIBLE);
+            IDarea.setVisibility(View.VISIBLE);
+            IDidh.setVisibility(View.VISIBLE);
+            IDmunicipios.setVisibility(View.VISIBLE);
         }
+
     }
     public void telaprincipal(View view){
 
