@@ -148,19 +148,20 @@
         app:layout_constraintVertical_bias="0.388" />
 
     <TextView
-        android:id="@+id/IDname"
-        android:layout_width="118dp"
-        android:layout_height="46dp"
+        android:id="@+id/IDestadinho"
+        android:layout_width="215dp"
+        android:layout_height="89dp"
         android:fontFamily="casual"
         android:text="ESTADO"
+        android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134" />
+        app:layout_constraintVertical_bias="0.116" />
 
     <ImageView
         android:id="@+id/IDmapa"
