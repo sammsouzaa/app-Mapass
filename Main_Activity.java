@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -48,26 +49,18 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Intent it_telamapas = new Intent(this, telamapas.class);
+        String estado2 = nomeestado.getEditText().getText().toString();
 
-        if (nomeestado.equals("pr")|| nomeestado.equals("PR")){
+        String iestado = estado2;
 
-            it_telamapas.putExtra("nomeestado", "parana");
-            it_telamapas.putExtra("siglaestado", "pr");
+        if(iestado.equals("pr")|| iestado.equals("PR") || iestado.equals("sc") || iestado.equals("SC") || iestado.equals("rs") || iestado.equals("RS")){
+
+            it_telamapas.putExtra("nome", iestado);
+            startActivity(it_telamapas);
         }
-
-        else if (nomeestado.equals("sc")|| nomeestado.equals("SC")){
-
-            it_telamapas.putExtra("nomeestado", "santa catarina");
-            it_telamapas.putExtra("siglaestado", "sc");
+        else {
+            Toast.makeText(this, "Certifique-se que você digitou Corretamente", Toast.LENGTH_SHORT).show();
         }
-
-        else if (nomeestado.equals("rs")|| nomeestado.equals("RS")){
-
-            it_telamapas.putExtra("nomeestado", "rio grande do sul");
-            it_telamapas.putExtra("siglaestado", "rs");
-        }
-
-        startActivity(it_telamapas);
 
     }
 }
