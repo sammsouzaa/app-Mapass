@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class telaMapas extends AppCompatActivity {
+public class telamapas extends AppCompatActivity {
 
     public TextView IDcapital;
     public TextView IDpopulacao;
