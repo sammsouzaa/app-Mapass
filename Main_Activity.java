@@ -15,21 +15,16 @@ public class MainActivity extends AppCompatActivity {
 
     public EditText IDnomeestado;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-        IDnomeestado = findViewById(R.id.IDnomeestado);
-
     }
-    public void telaMapas(View view){
+    public void telamapas(View view){
 
-        Intent it_telaMapas = new Intent(this, telamapas.class);
+        Intent it_telamapas = new Intent(this, telamapas.class);
 
-        startActivity(it_telaMapas);
+        startActivity(it_telamapas);
 
         //setContentView(R.layout.activity_main);
     }
