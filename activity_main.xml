@@ -59,7 +59,7 @@
         app:layout_constraintVertical_bias="0.305" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/IDnomeestado"
+        android:id="@+id/IDestado"
         android:layout_width="360dp"
         android:layout_height="61dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -73,7 +73,8 @@
             android:layout_width="369dp"
             android:layout_height="58dp"
             android:background="#85BDEA"
-            android:hint="Sigla do Estado" />
+            android:hint="Sigla do Estado"
+            android:inputType="text"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -87,5 +88,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.751" />
+
+    <TextView
+        android:id="@+id/IDerror"
+        android:layout_width="204dp"
+        android:layout_height="75dp"
+        android:text="."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="598dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
