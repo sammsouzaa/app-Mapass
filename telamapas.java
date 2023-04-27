@@ -18,7 +18,6 @@ public class telamapas extends AppCompatActivity {
     public TextView IDarea;
     public TextView IDidh;
     public TextView IDmunicipios;
-
     public ImageView IDbandeira;
     public ImageView IDmapa;
 
@@ -55,12 +54,6 @@ public class telamapas extends AppCompatActivity {
             IDarea.setText("199.315 km²");
             IDidh.setText("0,749");
             IDmunicipios.setText("399");
-
-            IDcapital.setVisibility(View.VISIBLE);
-            IDpopulacao.setVisibility(View.VISIBLE);
-            IDarea.setVisibility(View.VISIBLE);
-            IDidh.setVisibility(View.VISIBLE);
-            IDmunicipios.setVisibility(View.VISIBLE);
         }
         else if (estado.equals("sc")|| estado.equals("SC")){
 
@@ -74,12 +67,6 @@ public class telamapas extends AppCompatActivity {
             IDarea.setText("95.346 km²");
             IDidh.setText("0,840");
             IDmunicipios.setText("295");
-
-            IDcapital.setVisibility(View.VISIBLE);
-            IDpopulacao.setVisibility(View.VISIBLE);
-            IDarea.setVisibility(View.VISIBLE);
-            IDidh.setVisibility(View.VISIBLE);
-            IDmunicipios.setVisibility(View.VISIBLE);
         }
         else if (estado.equals("rs")|| estado.equals("RS")){
 
@@ -93,12 +80,6 @@ public class telamapas extends AppCompatActivity {
             IDarea.setText("281.748 km²");
             IDidh.setText("0,652");
             IDmunicipios.setText("497");
-
-            IDcapital.setVisibility(View.VISIBLE);
-            IDpopulacao.setVisibility(View.VISIBLE);
-            IDarea.setVisibility(View.VISIBLE);
-            IDidh.setVisibility(View.VISIBLE);
-            IDmunicipios.setVisibility(View.VISIBLE);
         }
 
     }
