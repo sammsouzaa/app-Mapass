@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
             nomeestado.setErrorEnabled(false);
             return true;
         }
-
     }
     public void telamapas(View view){
 
@@ -61,6 +60,5 @@ public class MainActivity extends AppCompatActivity {
         else {
             Toast.makeText(this, "Certifique-se que você digitou Corretamente", Toast.LENGTH_SHORT).show();
         }
-
     }
 }
