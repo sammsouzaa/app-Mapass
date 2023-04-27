@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
     }
-    public void telamapas(View view){
+   public void telamapas(View view){
 
         if (!validatenome()) {
             return;
@@ -51,8 +51,13 @@ public class MainActivity extends AppCompatActivity {
         String estado2 = nomeestado.getEditText().getText().toString();
 
         String iestado = estado2;
+	iestado = iestado.toLowerCase();
 
-        if(iestado.equals("pr")|| iestado.equals("PR") || iestado.equals("sc") || iestado.equals("SC") || iestado.equals("rs") || iestado.equals("RS")){
+        if(iestado.equals("ac")|| iestado.equals("al")|| iestado.equals("ap") || iestado.equals("am") || iestado.equals("ba") || iestado.equals("ce")
+	|| iestado.equals("df") || iestado.equals("es") || iestado.equals("go") || iestado.equals("ma") || iestado.equals("mt") || iestado.equals("ms")
+	|| iestado.equals("mg") || iestado.equals("pa") || iestado.equals("pb") || iestado.equals("pr") || iestado.equals("pe") || iestado.equals("pi")
+	|| iestado.equals("rj") || iestado.equals("rn") || iestado.equals("rs") || iestado.equals("ro") || iestado.equals("rr") || iestado.equals("sc")
+	|| iestado.equals("sp") || iestado.equals("se") || iestado.equals("to")){
 
             it_telamapas.putExtra("nome", iestado);
             startActivity(it_telamapas);
