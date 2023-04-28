@@ -8,7 +8,7 @@
     tools:context=".telamapas" >
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/imageIcon"
         android:layout_width="46dp"
         android:layout_height="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -299,8 +299,8 @@
 
     <com.github.chrisbanes.photoview.PhotoView
         android:id="@+id/IDmapa"
-        android:layout_width="315dp"
-        android:layout_height="247dp"
+        android:layout_width="318dp"
+        android:layout_height="229dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
